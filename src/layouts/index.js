@@ -106,9 +106,9 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Ivy Master | Aspire to More"
+      title="University High School of Business"
       meta={[
-        { name: 'description', content: 'Ivy Master Academy is dedicated to teaching and helping students in all aspects of high school education: maintaining great GPAs, improving test scores, and simplifying college admissions. Spark Your Dream, today!' },
+        { name: 'description', content: 'University High School of Business & Leadership International' },
         { name: 'keywords', content: 'college, SAT, ACT, university, tutoring, UCLA, Harvard' },
       ]}
     />
