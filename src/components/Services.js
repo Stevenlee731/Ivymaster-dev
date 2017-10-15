@@ -24,6 +24,7 @@ const Header = styled.h1`
 
 const Body = styled.ul`
   font-size: 1.2em;
+  margin-top: 0;
 `
 
 const Image = styled.img`
