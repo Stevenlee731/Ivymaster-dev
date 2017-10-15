@@ -12,6 +12,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "normalize.css": "^7.0.0",
     "nuka-carousel": "^2.3.0",
+    "react-scroll": "^1.5.5",
     "react-slick": "^0.15.4",
     "react-swipeable-views": "^0.12.8",
     "react-typography": "^0.16.5",

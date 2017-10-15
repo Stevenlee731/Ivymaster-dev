@@ -28,21 +28,20 @@ export default class Carousel extends Component {
       // dotsClass: 'carouselDots',
       infinite: true,
       slidesToShow: 1,
+      arrows: true,
       slidesToScroll: 1,
+      swipeToSlide: false,
       autoplay: true,
       speed: 2000,
-      fade: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 6000
     };
     return (
       <div>
         <Slider {...settings}>
           <div>
-            <Overlay/>
             <Slide src={slideOne}/>
           </div>
           <div>
-            <Overlay/>
             <Slide src={slideTwo}/>
           </div>
         </Slider>

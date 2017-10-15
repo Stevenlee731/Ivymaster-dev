@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import ProfileModal from './Modal'
 import styled from 'styled-components'
-import headshotOne from '../images/headshot-1.jpeg'
+import headshotOne from '../images/student-1.jpg'
 import headshotTwo from '../images/headshot-2.jpeg'
-import headshotThree from '../images/headshot-3.jpeg'
+import headshotThree from '../images/student-2.jpg'
 
 const Section = styled.section`
   width: 100vw;
@@ -20,11 +20,13 @@ const TextContainer = styled.div`
 const TextHeader = styled.h1`
   color: black;
   font-size: 2rem;
+  padding-left: 3%;
+  border-left: 2px solid palevioletred;
 `
 
 const TextBody = styled.p`
   font-size: 1rem;
-  margin-left: 10%;
+  padding-left: 10%;
 `
 console.log(headshotOne)
 
@@ -57,8 +59,13 @@ export default class TeamViewer extends Component {
     return (
       <Section>
         <TextContainer>
-          <TextHeader>Lorem ipsum dolor sit amet, consectetur adipiscing elit</TextHeader>
-          <TextBody>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,</TextBody>
+          <TextHeader>Join Us</TextHeader>
+          <TextBody>
+            University HS of Business and Leadership International was developed with both US and foreign students in mind. The purpose of UHSLB is to develop an entrepreneurial mindset in young leaders.
+          </TextBody>
+          <TextBody>
+            In partnership with Concordia University School of Business and the Leadership Academy, UHSLB provides students the opportunity to earn a high school diploma as well as college credits towards a degree in higher education. All AP courses are transferable to colleges and universities. The potential to earn up to 2 years of college credit is available.
+          </TextBody>
         </TextContainer>
         <ProfileModal {...this.state.profileOne} />
         <ProfileModal {...this.state.profileTwo}/>

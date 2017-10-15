@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import tutor from '../images/tutor.jpg'
-import consult from '../images/consult.jpeg'
-import test from '../images/test.jpg'
+import globe from '../images/earth-globe.png'
+import mortarboard from '../images/mortarboard.png'
+import book from '../images/book.png'
 
 const Section = styled.section`
   width: 100vw;
+  padding: 0 2em;
   min-height: 400px;
   display: flex;
   position: relative;
@@ -20,16 +21,23 @@ const Header = styled.h1`
   height: 100%;
   text-align: center;
 `
+
+const Body = styled.ul`
+  font-size: 1.2em;
+`
+
 const Image = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   margin: 0;
+  padding: 1em;
 `
 
 const Service = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
+  align-items: center;
   background-color: white;
   padding: 1em;
   margin: 2em 1em;
@@ -41,16 +49,31 @@ export default class Services extends Component {
     return (
       <Section>
         <Service>
-          <Image src={test} />
-          <Header>Test Preparation</Header>
+          <Image src={book} />
+          <Header>What We Do</Header>
+          <Body>
+            <li>College Readiness</li>
+            <li>21st Century Careers</li>
+            <li>Purposeful Life</li>
+          </Body>
         </Service>
         <Service>
-           <Image src={tutor} />     
-           <Header>Academic Tutoring</Header>
+           <Image src={mortarboard} />     
+           <Header>Why We Do It</Header>
+           <Body>
+             <li>Opportunities/Choices</li>
+             <li>Increased Expectations</li>
+             <li>Impact Community</li>
+          </Body>
         </Service>
         <Service>
-          <Image src={consult} />
-          <Header>College Consultation</Header>
+          <Image src={globe} />
+          <Header>How We Do It</Header>
+          <Body>
+             <li>Strengthening The Whole Child</li>
+             <li>Fostering Entrepreneurial Mindset</li>
+             <li>Thinking Globally</li>
+          </Body>
         </Service>
       </Section>
     )

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import photoOne from '../images/photo-3.jpeg'
-import photoTwo from '../images/student-1.jpeg'
+import photoOne from '../images/graduation.jpg'
 
 const Section = styled.section`
   width: 100vw;
@@ -16,13 +15,13 @@ const Section = styled.section`
 const LeftImage = styled.img`
   height: 100%;
   margin: 0;
-  width: 45%;
+  width: 60%;
 `
 
 const TextSquare = styled.div`
-  height: 100vh;
-  width: 50vw;
-  background-color: #A41034;
+  height: 104vh;
+  width: 40%;
+  background-color: rgb(77, 29, 124);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -35,6 +34,7 @@ const Header = styled.h1`
   color: white;
   font-size: 2em;
   margin: 0;
+  margin-top: 1.3em;
 `
 
 const TextBody = styled.h1`
@@ -54,11 +54,11 @@ export default class Methodology extends Component {
       <Section>
         <LeftImage src={photoOne}/>
         <TextSquare>
-          <Header>Our Method</Header>
-          <TextBody>Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,</TextBody>
-          <TextBody>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</TextBody>
+          <Header>Our Mission</Header>
+          <TextBody>The Mission of University High School of Business and Leadership International is to provide students access to innovative educational opportunities that readies them for lifelong success through an educational journey to an entrepreneurial mindset.</TextBody>
+          <Header>Our Vision</Header>
+          <TextBody>The vision of University High School of Business and Leadership International is to prepare all students to succeed both academically and personally in college, career and life.</TextBody>
         </TextSquare>
-        <RightImage src={photoTwo}/>
       </Section>
     )
   }
