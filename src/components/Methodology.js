@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import photoOne from '../images/graduation.jpg'
+import Img from 'gatsby-image'
 
 const Section = styled.section`
   width: 100vw;
@@ -9,18 +10,16 @@ const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(50, 80, 127);
 `
 
-const LeftImage = styled.img`
-  height: 100%;
+const LeftImage = styled.div`
+  background-image: url(${photoOne});
   margin: 0;
   width: 60%;
 `
 
 const TextSquare = styled.div`
   height: 104vh;
-  width: 40%;
   background-color: rgb(77, 29, 124);
   margin: 0;
   display: flex;
@@ -49,17 +48,36 @@ const RightImage = styled.img`
 `
 
 export default class Methodology extends Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
     return (
       <Section>
-        <LeftImage src={photoOne}/>
+        {console.log(this.props,'steve')}
+        {/* <Img resolutions={data.file.childImageSharp.resolutions} /> */}
+        <LeftImage/>
         <TextSquare>
           <Header>Our Mission</Header>
-          <TextBody>The Mission of University High School of Business and Leadership International is to provide students access to innovative educational opportunities that readies them for lifelong success through an educational journey to an entrepreneurial mindset.</TextBody>
+          <TextBody>大学的使命任务说明高中的掌握和领 导国际是让学生获得创新的教育机 会,准备就绪他们毕生的成功来自一种教育历程达成有创业心态.</TextBody>
           <Header>Our Vision</Header>
-          <TextBody>The vision of University High School of Business and Leadership International is to prepare all students to succeed both academically and personally in college, career and life.</TextBody>
+          <TextBody>大学的使命任务说明高中的掌握和领 导国际是让学生获得创新的教育机会, 准备就绪他们毕生的成功来自一种教 育历程达成有创业心态.</TextBody>
         </TextSquare>
       </Section>
     )
   }
 }
+
+export const query = graphql`
+query GatsbyImageSampleQuery {
+  file(relativePath: { eq: "images/graduation.jpg"}) {
+    childImageSharp {
+      # Specify the image processing steps right in the query
+      # Makes it trivial to update as your page's design changes.
+      resolutions(width: 125, height: 125) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+  }
+}
+`

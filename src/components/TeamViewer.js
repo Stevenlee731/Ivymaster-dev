@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ProfileModal from './Modal'
 import styled from 'styled-components'
-import headshotOne from '../images/student-1.jpg'
+import headshotOne from '../images/headshot-3.jpeg'
 import headshotTwo from '../images/headshot-2.jpeg'
 import headshotThree from '../images/student-2.jpg'
 
@@ -59,12 +59,12 @@ export default class TeamViewer extends Component {
     return (
       <Section>
         <TextContainer>
-          <TextHeader>Join Us</TextHeader>
+          <TextHeader>加入我们</TextHeader>
           <TextBody>
-            University HS of Business and Leadership International was developed with both US and foreign students in mind. The purpose of UHSLB is to develop an entrepreneurial mindset in young leaders.
+          University HS 的商业及国际发展与领导是与美国和外国学生而设计的. UHSLB 的目的是让青年领袖学员有创业心态在.
           </TextBody>
           <TextBody>
-            In partnership with Concordia University School of Business and the Leadership Academy, UHSLB provides students the opportunity to earn a high school diploma as well as college credits towards a degree in higher education. All AP courses are transferable to colleges and universities. The potential to earn up to 2 years of college credit is available.
+          与 Concordia University School of Business and Leadership Academy 的伙伴关系、 UHSLB 让学生有机会获得高中毕业证书以及某种程度的高等教育学院点数. 所有预先安排的课程转让给学院和大学. 可能赚取高达二年大学的学分用是否可用.
           </TextBody>
         </TextContainer>
         <ProfileModal {...this.state.profileOne} />

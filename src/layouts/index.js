@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import typography from '../utils/typography'
 import {Icon} from 'semantic-ui-react'
+import logo from '../images/UHSBL-logo.png'
 
 import 'normalize.css'
 import 'semantic-ui-css/semantic.min.css';
@@ -12,8 +13,8 @@ import './index.css'
 
 const BusinessBox = styled.div`
   color: black;
-  display: block;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 1em;
 `
@@ -85,16 +86,19 @@ const Header = () => (
           }}
         >
         <BusinessBox>
-          <BusinessHeader>University High School</BusinessHeader>
-          <BusinessSubHeader>of Business and Leadership</BusinessSubHeader>
+          <img style={{margin: 0}} height='50px' src={logo}/>
+          <div>
+            <BusinessHeader>University High School</BusinessHeader>
+            <BusinessSubHeader>of Business and Leadership</BusinessSubHeader>
+          </div>
         </BusinessBox>
         </Link>
         <RightHeader>
           <NavButton left>
-          <Link style={{textDecoration: "none", color: "inherit"}} to="/contact/">Join Us</Link>
+          <Link style={{textDecoration: "none", color: "inherit"}} to="/contact/">加入我们</Link>
           </NavButton>
           <NavButton >
-            <Link style={{textDecoration: "none", color: "inherit"}} to="/about/">Our Mission</Link>
+            <Link style={{textDecoration: "none", color: "inherit"}} to="/about/">大学的使命任</Link>
           </NavButton>
           <NavButton>
             <Link style={{textDecoration: "none", color: "inherit"}} to="/contact/">Contact</Link>

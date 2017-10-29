@@ -51,29 +51,29 @@ export default class Services extends Component {
       <Section>
         <Service>
           <Image src={book} />
-          <Header>What We Do</Header>
+          <Header>我们如何做到这一点</Header>
           <Body>
-            <li>College Readiness</li>
-            <li>21st Century Careers</li>
-            <li>Purposeful Life</li>
+            <li>加强整个人</li>
+            <li>培育创业心态</li>
+            <li>在全球范围内的整体思考 </li>
           </Body>
         </Service>
         <Service>
            <Image src={mortarboard} />     
-           <Header>Why We Do It</Header>
+           <Header>为什么我们做这件事</Header>
            <Body>
-             <li>Opportunities/Choices</li>
-             <li>Increased Expectations</li>
-             <li>Impact Community</li>
+             <li>机会 / 选择 </li>
+             <li>增加更高的期望</li>
+             <li>社会的影响</li>
           </Body>
         </Service>
         <Service>
           <Image src={globe} />
-          <Header>How We Do It</Header>
+          <Header>我们如何做到这一点</Header>
           <Body>
-             <li>Strengthening The Whole Child</li>
-             <li>Fostering Entrepreneurial Mindset</li>
-             <li>Thinking Globally</li>
+             <li>加强整个人</li>
+             <li>培育创业心态</li>
+             <li>在全球范围内的整体思考</li>
           </Body>
         </Service>
       </Section>
