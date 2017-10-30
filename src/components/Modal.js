@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const ProfileImage = styled.img`
   border-radius: 50%;
-  &:hover { transform: scale(1.05); }
 `
 
 const ProfileModal = profile => {

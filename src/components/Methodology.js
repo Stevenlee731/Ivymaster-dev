@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 const Section = styled.section`
   width: 100vw;
-  max-height: 400px;
+  max-height: 600px;
   overflow-y: hidden;
   display: flex;
   justify-content: space-between;
@@ -13,15 +13,19 @@ const Section = styled.section`
 `
 
 const LeftImage = styled.div`
-  background-image: url(${photoOne});
   margin: 0;
-  width: 60%;
+  height: 600px;
+  width: 55%;
+  background: url(${photoOne}) no-repeat;
+  background-size: cover;
+  background-position: right;
 `
 
 const TextSquare = styled.div`
-  height: 104vh;
+  height: 600px;
   background-color: rgb(77, 29, 124);
   margin: 0;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,11 +46,6 @@ const TextBody = styled.h1`
   font-size: 1em;
 `
 
-const RightImage = styled.img`
-  height: 100%;
-  margin: 0;
-`
-
 export default class Methodology extends Component {
   constructor(props) {
     super(props)
@@ -56,7 +55,7 @@ export default class Methodology extends Component {
       <Section>
         {console.log(this.props,'steve')}
         {/* <Img resolutions={data.file.childImageSharp.resolutions} /> */}
-        <LeftImage/>
+        <LeftImage></LeftImage>
         <TextSquare>
           <Header>Our Mission</Header>
           <TextBody>大学的使命任务说明高中的掌握和领 导国际是让学生获得创新的教育机 会,准备就绪他们毕生的成功来自一种教育历程达成有创业心态.</TextBody>
