@@ -17,7 +17,7 @@ const Section = styled.section`
 `
 
 const TextContainer = styled.div`
-
+  width: 45%;
   @media (max-width: 991px) {
     width: 100vw;
     padding: 1rem 2rem;
