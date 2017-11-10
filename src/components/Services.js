@@ -51,11 +51,11 @@ export default class Services extends Component {
       <Section>
         <Service>
           <Image src={book} />
-          <Header>我们如何做到这一点</Header>
+          <Header>我们做什么</Header>
           <Body>
-            <li>加强整个人</li>
-            <li>培育创业心态</li>
-            <li>在全球范围内的整体思考 </li>
+            <li>做好准备升学院的心态</li>
+            <li>二十一世纪的工作生涯</li>
+            <li>准备有原因和目标用途的生活方式</li>
           </Body>
         </Service>
         <Service>

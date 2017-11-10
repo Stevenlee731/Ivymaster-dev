@@ -61,6 +61,10 @@ export default class Methodology extends Component {
           <TextBody>大学的使命任务说明高中的掌握和领 导国际是让学生获得创新的教育机 会,准备就绪他们毕生的成功来自一种教育历程达成有创业心态.</TextBody>
           <Header>Our Vision</Header>
           <TextBody>大学的使命任务说明高中的掌握和领 导国际是让学生获得创新的教育机会, 准备就绪他们毕生的成功来自一种教 育历程达成有创业心态.</TextBody>
+          <Header>学院 / 大学学分</Header>
+          <TextBody>学生在 UHSBL 采取研究进阶课程 已获 Concordia University 批 准. 此外,学生可以选择学院和/ 或大学课程, 而能导致取得副学 士学位或学士学位. 98成的高中 毕业生都考上学院和大学.</TextBody>
+          <Header>年级</Header>
+          <TextBody>学生入读 University HS 将接受并招收学生从九年级至十二年.</TextBody>
         </TextSquare>
       </Section>
     )
