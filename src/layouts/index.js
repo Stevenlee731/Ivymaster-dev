@@ -16,24 +16,36 @@ const BusinessBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1em;
+  padding: 1rem;
 `
 
 const BusinessHeader = styled.h1`
   margin: 0;
-  font-size: 1.7em;
+  font-size: 1.7rem;
+  @media (max-width: 767px) {
+		font-size: 1.3rem;
+  }
+  @media (max-width: 991px) {
+    font-size: 1.5rem;
+	}
 `
 
 const BusinessSubHeader = styled.h3`
   margin: 0;
-  font-size: 1em;
+  font-size: 1rem;
+  @media (max-width: 767px) {
+		font-size: 0.8rem;
+  }
+  @media (max-width: 991px) {
+    font-size 1rem;
+	}
 `
 
 const NavButton = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
-  padding: 0 3em;
+  padding: 0 3rem;
   font-size: 1.1em;
   border-left: ${props => props.left ? '1px solid #eee' : '0'};
   border-right: 1px solid #eee;
@@ -44,6 +56,9 @@ const NavButton = styled.div`
   &:hover {
     background: rgb(77, 29, 124);
     color: white !important;
+  }
+  @media (max-width: 991px) {
+    padding: 0 2rem;
 	}
 `
 
@@ -74,6 +89,9 @@ const RightHeader = styled.div`
   display: flex;
   min-width: 40%;
   justify-content: flex-end;
+  @media (max-width: 767px) {
+		display: none;
+	}
 `
 
 const Header = () => (

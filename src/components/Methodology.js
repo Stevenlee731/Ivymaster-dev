@@ -19,6 +19,9 @@ const LeftImage = styled.div`
   background: url(${photoOne}) no-repeat;
   background-size: cover;
   background-position: right;
+  @media (max-width: 991px) {
+		display: none;
+	}
 `
 
 const TextSquare = styled.div`
@@ -31,6 +34,10 @@ const TextSquare = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  @media (max-width: 991px) {
+    width: 100vw;
+    padding: 1rem;
+	}
 `
 
 const Header = styled.h1`

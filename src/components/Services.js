@@ -6,13 +6,17 @@ import book from '../images/book.png'
 
 const Section = styled.section`
   width: 100vw;
-  padding: 0 2em;
+  padding: 0 2rem;
   min-height: 400px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   background-color: #efefef;
+
+  @media (max-width: 767px) {
+		flex-direction: column;
+	}
 `
 
 const Header = styled.h1`
@@ -23,8 +27,11 @@ const Header = styled.h1`
 `
 
 const Body = styled.ul`
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-top: 0;
+  @media (max-width: 991px) {
+    font-size: 1rem;
+	}
 `
 
 const Image = styled.img`
@@ -41,8 +48,12 @@ const Service = styled.div`
   align-items: center;
   background-color: white;
   padding: 1em;
-  margin: 2em 1em;
+  margin: 2rem 1em;
   box-shadow: 7px 10px 13px 0px rgba(214,214,214,1);
+
+  @media (max-width: 767px) {
+    margin: 1rem 0;
+	}
 `
 
 export default class Services extends Component {

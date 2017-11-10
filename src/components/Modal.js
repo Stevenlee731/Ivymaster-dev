@@ -4,6 +4,16 @@ import styled from 'styled-components'
 
 const ProfileImage = styled.img`
   border-radius: 50%;
+  @media (max-width: 767px) {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+  }
+  @media (max-width: 991px) {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+	}
 `
 
 const ProfileModal = profile => {
